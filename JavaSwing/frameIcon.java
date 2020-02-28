@@ -1,4 +1,6 @@
-
+/*
+    importing java Container to contain whole frame. then we can make change in the frame which we want..
+*/
 package Swing;
 
 
@@ -18,7 +20,7 @@ public class frameIcon extends JFrame{
         c = this.getContentPane();
         c.setBackground(Color.red);
         
-        ImageIcon icon = new ImageIcon(getClass().getResource("monster.jpeg"));
+        ImageIcon icon = new ImageIcon(getClass().getResource("monster.jpeg")); // getClass() is a instance method.
         this.setIconImage(icon.getImage());
     }
     public static void main(String[] args) {
